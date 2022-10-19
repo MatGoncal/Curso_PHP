@@ -7,12 +7,12 @@
 
 <form action="#" class="POST">
     <p>Digite o CEP para encontrar o endereço.</p>
-    <input type="text" placeholder="DIGITE UM CEP" name="cep">
-    <input type="submit">
-    <input type="text" placeholder="RUA" name="rua" value="<?= $address->logradouro ?>">
-    <input type="text" placeholder="BAIRRO" name="bairro" value="<?= $address->bairro ?>">
-    <input type="text" placeholder="CIDADE" name="cidade" value="<?= $address->localidade ?>">
-    <input type="text" placeholder="ESTADO" name="estado" value="<?= $address->uf ?>">
+    <input type="text" placeholder="DIGITE UM CEP" name="cep" value="<?php echo $address->cep ?>">
+    <input type="submit"><br>
+    <input type="text" placeholder="Rua" name="rua" value="<?php echo $address->logradouro ?>">
+    <input type="text" placeholder="Bairro" name="bairro" value="<?php echo $address->bairro ?>">
+    <input type="text" placeholder="Cidade" name="cidade" value="<?php echo $address->localidade ?>">
+    <input type="text" placeholder="Estado" name="estado" value="<?php echo $address->uf ?>">
 </form>
 
 <style>
